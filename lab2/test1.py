@@ -1,16 +1,11 @@
 from collections import deque
 
 def WriteLines(n):
-    f = open("a.txt", 'r')
     with open("a.txt") as k:
         for row in deque(k, n):
             print(row.strip())
 
-    f.close()
 
-
-# та записує парні рядки у Верхньому регістрі в файл b1
-# а непарні в нижньому регістрі в файл b2
 def separ():
     f = open("a.txt", 'r')
     wparn = open('b1.txt', 'w')
