@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<html>
+    <head>
+        <title>Booking</title>
+    </head>
+    <body>>
+        <h1>Which car you want to book?</h1>
+        {% for car in cars %}
+            {{ car.autoName }} {{ car.autoModel }}
+        <a href="/return">Book</a><br>
+        {% endfor %}
+
+    </body>
+</html>
+{% endblock %}

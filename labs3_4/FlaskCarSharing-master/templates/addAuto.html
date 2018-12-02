@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<html>
+    <body>
+        <h1>Add a car</h1>
+        <form method="POST" action="/showList">
+            Car Name<br>
+            <input type="text" name="name"><br>
+            Car Model<br>
+            <input type="text" name="model"><br>
+            Engine<br>
+            <input type="text" name="engine"><br>
+            Seats<br>
+            <input type="text" name="passengers"><br>
+            <input type="submit" value="Add"><br>
+        </form>
+    </body>
+</html>
+{% endblock %}

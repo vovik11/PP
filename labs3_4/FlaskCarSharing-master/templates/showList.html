@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<html>
+    <body>
+        <h1>Cars</h1>
+        {% for car in cars %}
+            <p>{{car.autoName}} {{car.autoModel}} {{car.engine}} {{car.passengers}}</p>
+        {% endfor %}
+        <a href = "/">Go back to home page</a>
+    </body>
+</html>
+{% endblock %}
